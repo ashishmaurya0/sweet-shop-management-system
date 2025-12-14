@@ -86,7 +86,14 @@ Before running this project, make sure you have the following installed:
 6. **Preview production build**
    ```bash
    npm run preview
-   ```
+7. **Preview Snapshots**
+   <img width="1870" height="890" alt="Screenshot 2025-12-15 011646" src="https://github.com/user-attachments/assets/b7d133e5-0576-4633-b5cc-af685867b060" />
+   <img width="1630" height="908" alt="Screenshot 2025-12-15 012106" src="https://github.com/user-attachments/assets/9b279b9d-af81-4eca-b1b1-3a9ebb7cbfe6" />
+   <img width="1854" height="888" alt="Screenshot 2025-12-15 011830" src="https://github.com/user-attachments/assets/69a405e0-49e5-4605-88b1-f65622d8c962" />
+
+
+```
+
 
 ## 📁 Project Structure
 
