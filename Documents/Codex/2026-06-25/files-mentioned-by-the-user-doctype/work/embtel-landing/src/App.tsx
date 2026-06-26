@@ -96,7 +96,7 @@ function Navbar() {
         <a className="flex items-center gap-3" href="#home" aria-label="Embtel home">
           <img src={logoImage} alt="" className="h-9 w-9 rounded-lg" />
           <span className="text-xl font-bold tracking-tight text-foreground">
-            Shivanya
+            ᦓꫝ꠸ꪜꪖꪀꪗꪖ
           </span>
         </a>
         <div className="hidden items-center gap-1 md:flex">
@@ -117,7 +117,7 @@ function Navbar() {
           className="hidden border-white/20 bg-white/[0.06] text-foreground hover:bg-white/[0.12] md:inline-flex"
           variant="outline"
         >
-          Contact
+        𝒮𝒾𝑔𝓃𝓊𝓅
         </Button>
         <Button
           aria-expanded={menuOpen}
@@ -177,7 +177,11 @@ function Hero() {
       className="relative min-h-[760px] overflow-hidden bg-background sm:min-h-[820px] lg:min-h-[100svh]"
     >
       <Navbar />
-      <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(rgba(255,255,255,.035)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,.035)_1px,transparent_1px)] bg-[size:72px_72px] opacity-40 [mask-image:radial-gradient(ellipse_at_top,black_25%,transparent_75%)]" />
+      {/* CSS mask-image has inconsistent support across browsers/devices; use a gradient overlay instead. */}
+      <div className="pointer-events-none absolute inset-0 opacity-40">
+        <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,.035)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,.035)_1px,transparent_1px)] bg-[size:72px_72px]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(0,0,0,1)_0%,rgba(0,0,0,0)_60%)]" />
+      </div>
       <motion.div
         className="relative z-10 mx-auto mt-10 flex max-w-5xl flex-col items-center px-4 text-center sm:mt-14 md:mt-20"
         style={{ y: textY, opacity: textOpacity }}
